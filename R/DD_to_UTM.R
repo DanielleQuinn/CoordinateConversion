@@ -5,6 +5,14 @@
 #' @param ellipsoid
 #'
 #' @return UTM
+#' 
+#' @importFrom sp coordinates<- proj4string<- CRS spTransform
+#' @importFrom magrittr %>%
+#' @importFrom dplyr select mutate pull
+#' @importFrom stats setNames
+#' @importFrom tidyselect all_of
+#' @importFrom rlang .data
+#' 
 #' @export
 #'
 #' @examples
@@ -28,7 +36,7 @@ DD_to_UTM <-  function(x, y, ellipsoid = "WGS84", return = "all") {
   
   res <- spTransform(xy, CRS(paste0("+proj=utm +zone=", zone, " ellps=", ellipsoid))) %>%
     as.data.frame() %>%
-    select(easting, northing) %>%
+    select(.data$easting, .data$northing) %>%
     mutate(zone = zone)
   
   if(return == "all") {

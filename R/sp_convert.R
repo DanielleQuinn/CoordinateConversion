@@ -20,6 +20,10 @@
 #' sp_convert(df_utm, x = "easting", y = "northing", from = "UTM", to = "DDM")
 #' 
 #' @importFrom rlang :=
+#' @importFrom tidyr drop_na
+#' @importFrom dplyr rename distinct rowwise across rename_with left_join
+#' @importFrom tidyselect starts_with
+#' @importFrom rlang .data
 #' 
 #' @export
 sp_convert <- function(data, x = "lon", y = "lat",
@@ -39,9 +43,9 @@ sp_convert <- function(data, x = "lon", y = "lat",
     rename(x = all_of(x), y = all_of(y)) %>%
     drop_na(x, y) %>%
     # If UTM is being used, rename zone variable
-    {if(from == "UTM") rename(., zone = all_of(zone)) else .} %>%
+    {if(from == "UTM") rename(.data, zone = all_of(zone)) else .data} %>%
     # Keep unique combinations of 'x' and 'y'; if 'from' is UTM, also keep 'zone'
-    {if(from == "UTM") distinct(., x, y, zone) else distinct(., x, y)}
+    {if(from == "UTM") distinct(.data, x, y, zone) else distinct(.data, x, y)}
   
   #### Identify Conversion Functions 
   # If `to` value is "all", specify all options
@@ -61,30 +65,30 @@ sp_convert <- function(data, x = "lon", y = "lat",
     rowwise() %>%
     # Apply any functions associated with non-UTM conversions
     {if (length(non_utm_functions) > 0)
-      mutate(.,
-             across(.col = x, .names = "{.col}_{.fn}",
+      mutate(.data,
+             across(.cols = x, .names = "{.col}_{.fn}",
                     .fns = non_utm_functions, axis = "horizontal"),
-             across(.col = y, .names = "{.col}_{.fn}",
+             across(.cols = y, .names = "{.col}_{.fn}",
                     .fns = non_utm_functions, axis = "vertical"))
-      else .} %>%
+      else .data} %>%
     # Apply any functions associated with conversions 'to' UTM
     {if (length(to_utm_functions) > 0)
-      mutate(.,
-             across(.col = x, .names = "easting",
+      mutate(.data,
+             across(.cols = x, .names = "easting",
                     .fns = to_utm_functions, y = y, return = "easting"),
-             across(.col = x, .names = "northing",
+             across(.cols = x, .names = "northing",
                     .fns = to_utm_functions, y = y, return = "northing"),
-             across(.col = x, .names = "zone",
+             across(.cols = x, .names = "zone",
                     .fns = to_utm_functions, y = y, return = "zone"))
-      else .} %>%
+      else .data} %>%
     # Apply any functions associated with conversions 'from' UTM
     {if (length(from_utm_functions) > 0)
-      mutate(.,
-             across(.col = x, .names = "lat_{.fn}",
+      mutate(.data,
+             across(.cols = x, .names = "lat_{.fn}",
                     .fns = from_utm_functions, y = y, zone = zone, return = "lat"),
-             across(.col = x, .names = "lon_{.fn}",
+             across(.cols = x, .names = "lon_{.fn}",
                     .fns = from_utm_functions, y = y, zone = zone, return = "lon"))
-      else .} %>%
+      else .data} %>%
     # Rename columns to clean up
     rename("{paste(x, from, sep = '_')}" := x,
            "{paste(y, from, sep = '_')}" := y) %>%

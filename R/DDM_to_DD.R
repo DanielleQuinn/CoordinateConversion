@@ -9,6 +9,7 @@
 #' @export
 #'
 #' @examples
+#' 
 DDM_to_DD <-  function(DDM_input, axis){
   
   # Stop conditions
