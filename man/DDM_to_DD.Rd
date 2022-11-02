@@ -17,3 +17,6 @@ DD
 \description{
 DDM_to_DD
 }
+\examples{
+
+}

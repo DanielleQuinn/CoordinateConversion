@@ -36,6 +36,7 @@ The original data frame with converted coordinates appended as new columns
 Use existing spatial data in a data frame to convert to other coordinate systems.
 }
 \examples{
+library(sp)
 df_dd <- data.frame(lon = c( -63, -89.2345, 4.5, 4.5), lat = c(44, 23.34, 57.3246, 57.3246))
 sp_convert(df_dd, from = "DD", to = "DDM")
 

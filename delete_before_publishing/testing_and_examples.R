@@ -19,9 +19,12 @@ source("./R/sp_convert.R")
 
 # Testing ----
 # From DD
-testdata_DD <- data.frame(lon = c( -63, -89.2345, 4.5, 4.5),
-                          lat = c(44, 23.34, 57.3246, 57.3246),
+testdata_DD <- data.frame(lat = c( -63, -89.2345, 4.5, 4.5),
+                          lon = c(144, 23.34, 57.3246, 57.3246),
                           test = c("A", "B", "C", "D"))
+
+# Convert 144 longitude to DDM
+DD_to_DDM(DD_input = 144, axis = "horizontal")
 
 sp_convert(testdata_DD) # Works
 sp_convert(testdata_DD, to = "DMS") # Works
