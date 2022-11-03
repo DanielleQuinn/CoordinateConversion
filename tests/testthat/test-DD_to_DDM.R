@@ -27,8 +27,8 @@ test_that("typical use case works", {
 })
 
 test_that("edge cases", {
-  expect_equal(DD_to_DDM(DD_input = 100, axis = "vertical"),
-               "NA")
-  expect_equal(DD_to_DDM(DD_input = 200, axis = "horizontal"),
-               "NA")
+  expect_warning(val1 <- DD_to_DDM(DD_input = 200, axis = "horizontal"))
+  expect_warning(val2 <- DD_to_DDM(DD_input = 100, axis = "vertical"))
+  expect_equal(val1, NA)
+  expect_equal(val2, NA)
 })
