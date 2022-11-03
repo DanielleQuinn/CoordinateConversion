@@ -30,7 +30,7 @@ DD_to_DMS <-  function(DD_input, axis) {
         intToUtf8(176),
         " ",
         floor((abs(DD_input) - floor(abs(DD_input))) * 60),
-        " ",
+        "' ",
         round(((abs(DD_input) - floor(abs(DD_input))) * 60 - floor((abs(DD_input) - floor(abs(DD_input))) * 60)) * 60),
         '" ',
         case_when(
