@@ -1,11 +1,11 @@
 test_that("incorrect or missing variables", {
-  expect_error(DD_to_DDM(DD_input = "a", axis = "horizontal"),
+  expect_error(DD_to_DDM(DD_input = "a", axis = "vertical"),
                'DD_input must be numeric')
-  expect_error(DD_to_DDM(DD_input = c(63.5, 68.6), axis = "horizontal"),
+  expect_error(DD_to_DDM(DD_input = c(63.5, 68.6), axis = "vertical"),
                'DD_input must be of length 1')
   expect_error(DD_to_DDM(DD_input = 63.5, axis = "other"),
                'axis must be one of horizontal or vertical')
-  expect_error(DD_to_DDM(axis = "horizontal"),
+  expect_error(DD_to_DDM(axis = "vertical"),
                'argument "DD_input" is missing, with no default')
   expect_error(DD_to_DDM(DD_input = 63.5),
                'argument "axis" is missing, with no default')
