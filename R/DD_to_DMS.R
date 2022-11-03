@@ -10,7 +10,13 @@
 DD_to_DMS <-  function(DD_input, axis){
   
   # Stop conditions
+  if(!is.numeric(DD_input)) stop("DD_input must be numeric")
+  if(length(DD_input) != 1) stop("DD_input must be of length 1")
   if(!axis %in% c("horizontal", "vertical")) stop("axis must be one of horizontal or vertical")
+  
+  # Warning conditions
+  if(abs(DD_input) > 90 & axis == "vertical") warning("Vertical axis maximum is 90; NAs produced")
+  if(abs(DD_input) > 180 & axis == "horizontal") warning("Horizontal axis maximum is 180; NAs produced")
   
   if(DD_input < 0) DD_input <-  DD_input * -1
   degree <- floor(DD_input)

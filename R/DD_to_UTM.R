@@ -18,6 +18,13 @@
 #' @examples
 DD_to_UTM <-  function(x, y, ellipsoid = "WGS84", return = "all") {
   
+  # Stop conditions
+  if(!is.numeric(x)) stop("x must be numeric")
+  if(!is.numeric(y)) stop("y must be numeric")
+  if(length(x) != 1) stop("x must be of length 1")
+  if(length(y) != 1) stop("y must be of length 1")
+  if(!return %in% c("all", "easting", "northing", "zone")) stop("return must be one of all, easting, northing, or zone")
+  
   xy <- data.frame(easting = x, northing = y)
   
   coordinates(xy) <- c("easting", "northing")
