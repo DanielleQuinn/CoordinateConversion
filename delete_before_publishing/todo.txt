@@ -1,142 +1,134 @@
 DD_to_DDM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
-Other: _____
+X stop conditions
+X clean function
+X test code
+Other: 
+__ clean variable names to be more user friendly
 
 DD_to_DMS
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
-Other: _____
+X stop conditions
+X clean function
+X test code
+Other:
+__ clean variable names to be more user friendly
 
 DD_to_UTM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
-Other: _____
+X stop conditions
+__ clean function
+__ test code
+Other:
+__ add tests for ellipsoid constraints but don't have a clear grasp on how this can be achieved at the moment
+__ consider argument to specify how easting and northing should be rounded
+__ clean variable names to be more user friendly
 
 DDM_to_DD
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 DDM_to_DMS
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 DDM_to_UTM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 DMS_to_DD
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 DMS_to_DDM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 DMS_to_UTM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 UTM_to_DD
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 UTM_to_DDM
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 UTM_to_DMS
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
 
 sp_convert
-_ documentation
 __ params
-__ importFrom
-__ examples
+X importFrom
+X examples
 __ return
-_ stop conditions
-_ clean function
-_ test code
+__ stop conditions
+__ clean function
+__ test code
 Other: _____
