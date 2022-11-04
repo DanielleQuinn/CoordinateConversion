@@ -9,10 +9,10 @@
 #' @examples
 DD_to_DDM <-  function(DD_input, axis) {
   # Stop conditions
-  if (!is.numeric(DD_input))
-    stop("DD_input must be numeric")
   if (length(DD_input) != 1)
     stop("DD_input must be of length 1")
+  if (!is.numeric(DD_input))
+    stop("DD_input must be numeric")
   if (!axis %in% c("horizontal", "vertical"))
     stop("axis must be one of horizontal or vertical")
   
