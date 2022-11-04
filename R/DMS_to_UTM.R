@@ -1,14 +1,18 @@
 #' DMS_to_UTM
 #'
-#' @param x
-#' @param y
-#' @param ellipsoid
-#' @param return
+#' @param x FINISH
+#' @param y FINISH
+#' @param ellipsoid FINISH
+#' @param return FINISH
 #'
-#' @return UTM
-#' @export
+#' @return UTM FINISH
 #'
 #' @examples
+#' library(sp)
+#' DMS_to_UTM(x = "173° 30' 0\" E", y = "63° 30' 0\" N")
+#' DMS_to_UTM(x = "173° 30' 0 E", y = "63° 30' 0 N")
+#' 
+#' @export
 DMS_to_UTM <-  function(x, y, ellipsoid = "WGS84", return = "all") {
   
   x <- DMS_to_DD(x, axis = "horizontal")

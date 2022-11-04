@@ -1,12 +1,15 @@
 #' DD_to_DMS
 #'
-#' @param DD_input
-#' @param axis
+#' @param DD_input FINISH
+#' @param axis FINISH
 #'
 #' @return DMS
-#' @export
 #'
 #' @examples
+#' library(sp)
+#' DD_to_DMS(DD_input = 63.5, axis = "vertical")
+#' 
+#' @export
 DD_to_DMS <-  function(DD_input, axis) {
   # Stop conditions
   if (length(DD_input) != 1)

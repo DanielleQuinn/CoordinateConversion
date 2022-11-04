@@ -1,12 +1,15 @@
 #' DD_to_DDM
 #'
-#' @param DD_input
-#' @param axis
+#' @param DD_input FINISH
+#' @param axis FINISH
 #'
-#' @return DDM
-#' @export
+#' @return DDM FINISH
 #'
 #' @examples
+#' library(sp)
+#' DD_to_DDM(DD_input = 63.5, axis = "vertical")
+#' 
+#' @export
 DD_to_DDM <-  function(DD_input, axis) {
   # Stop conditions
   if (length(DD_input) != 1)
@@ -25,7 +28,7 @@ DD_to_DDM <-  function(DD_input, axis) {
       return(NA)
     } else {
       return(paste0(
-        trunc(absDeg),
+        trunc(abs(DD_input)),
         intToUtf8(176),
         " ",
         (abs(DD_input) - trunc(abs(DD_input))) * 60,

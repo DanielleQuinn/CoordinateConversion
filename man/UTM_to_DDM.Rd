@@ -7,13 +7,24 @@
 UTM_to_DDM(x, y, zone, ellipsoid = "WGS84", return = "all")
 }
 \arguments{
-\item{x}{}
+\item{x}{FINISH}
 
-\item{return}{}
+\item{y}{FINISH}
+
+\item{zone}{FINISH}
+
+\item{ellipsoid}{FINISH}
+
+\item{return}{FINISH}
 }
 \value{
-DDM
+DDM FINISH
 }
 \description{
 UTM_to_DDM
+}
+\examples{
+library(sp)
+UTM_to_DDM(x = 624436.9, y = 7043729.8, zone = 59)
+
 }

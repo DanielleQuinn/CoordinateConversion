@@ -1,15 +1,18 @@
 #' DDM_to_DD
 #'
-#' @param DDM_input 
-#' @param axis 
+#' @param DDM_input FINISH
+#' @param axis FINISH
 #'
 #' @return DD
 #' @importFrom stringr str_detect str_extract str_replace str_split
 #' @importFrom dplyr case_when
-#' @export
+
 #'
 #' @examples
-#' 
+#' library(sp)
+#' DDM_to_DD(DDM_input = "63° 30 N", axis = "vertical")
+#'
+#' @export
 DDM_to_DD <-  function(DDM_input, axis){
   
   # Stop conditions

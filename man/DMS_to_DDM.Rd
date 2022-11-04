@@ -7,13 +7,19 @@
 DMS_to_DDM(DMS_input, axis)
 }
 \arguments{
-\item{DMS_input}{}
+\item{DMS_input}{FINISH}
 
-\item{axis}{}
+\item{axis}{FINISH}
 }
 \value{
-DDM
+DDM FINISH
 }
 \description{
 DMS_to_DDM
+}
+\examples{
+library(sp)
+DMS_to_DDM(DMS_input = "63° 30' 0\" N", axis = "vertical")
+DMS_to_DDM(DMS_input = "63° 30' 0 N", axis = "vertical")
+
 }

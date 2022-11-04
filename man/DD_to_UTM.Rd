@@ -7,13 +7,22 @@
 DD_to_UTM(x, y, ellipsoid = "WGS84", return = "all")
 }
 \arguments{
-\item{ellipsoid}{}
+\item{x}{FINISH}
 
-\item{lat}{}
+\item{y}{FINISH}
+
+\item{ellipsoid}{FINISH}
+
+\item{return}{FINISH}
 }
 \value{
-UTM
+UTM FINISH
 }
 \description{
 DD_to_UTM
+}
+\examples{
+library(sp)
+DD_to_UTM(x = 173.5, y = 63.5)
+
 }

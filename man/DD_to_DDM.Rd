@@ -7,13 +7,18 @@
 DD_to_DDM(DD_input, axis)
 }
 \arguments{
-\item{DD_input}{}
+\item{DD_input}{FINISH}
 
-\item{axis}{}
+\item{axis}{FINISH}
 }
 \value{
-DDM
+DDM FINISH
 }
 \description{
 DD_to_DDM
+}
+\examples{
+library(sp)
+DD_to_DDM(DD_input = 63.5, axis = "vertical")
+
 }

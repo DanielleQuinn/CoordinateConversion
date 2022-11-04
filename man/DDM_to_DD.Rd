@@ -7,9 +7,9 @@
 DDM_to_DD(DDM_input, axis)
 }
 \arguments{
-\item{DDM_input}{}
+\item{DDM_input}{FINISH}
 
-\item{axis}{}
+\item{axis}{FINISH}
 }
 \value{
 DD
@@ -18,5 +18,7 @@ DD
 DDM_to_DD
 }
 \examples{
+library(sp)
+DDM_to_DD(DDM_input = "63° 30 N", axis = "vertical")
 
 }

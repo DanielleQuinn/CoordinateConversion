@@ -7,13 +7,24 @@
 UTM_to_DD(x, y, zone, ellipsoid = "WGS84", return = "all")
 }
 \arguments{
-\item{x}{}
+\item{x}{FINISH}
 
-\item{return}{}
+\item{y}{FINISH}
+
+\item{zone}{FINISH}
+
+\item{ellipsoid}{FINISH}
+
+\item{return}{FINISH}
 }
 \value{
-DD
+DD FINISH
 }
 \description{
 UTM_to_DD
+}
+\examples{
+library(sp)
+UTM_to_DD(x = 624436.9, y = 7043729.8, zone = 59)
+
 }

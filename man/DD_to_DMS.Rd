@@ -7,13 +7,18 @@
 DD_to_DMS(DD_input, axis)
 }
 \arguments{
-\item{DD_input}{}
+\item{DD_input}{FINISH}
 
-\item{axis}{}
+\item{axis}{FINISH}
 }
 \value{
 DMS
 }
 \description{
 DD_to_DMS
+}
+\examples{
+library(sp)
+DD_to_DMS(DD_input = 63.5, axis = "vertical")
+
 }

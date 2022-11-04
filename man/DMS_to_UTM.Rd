@@ -7,11 +7,23 @@
 DMS_to_UTM(x, y, ellipsoid = "WGS84", return = "all")
 }
 \arguments{
-\item{return}{}
+\item{x}{FINISH}
+
+\item{y}{FINISH}
+
+\item{ellipsoid}{FINISH}
+
+\item{return}{FINISH}
 }
 \value{
-UTM
+UTM FINISH
 }
 \description{
 DMS_to_UTM
+}
+\examples{
+library(sp)
+DMS_to_UTM(x = "173° 30' 0\" E", y = "63° 30' 0\" N")
+DMS_to_UTM(x = "173° 30' 0 E", y = "63° 30' 0 N")
+
 }

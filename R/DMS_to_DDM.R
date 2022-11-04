@@ -1,12 +1,16 @@
 #' DMS_to_DDM
 #'
-#' @param DMS_input 
-#' @param axis 
+#' @param DMS_input FINISH
+#' @param axis FINISH
 #'
-#' @return DDM
-#' @export
+#' @return DDM FINISH
 #'
 #' @examples
+#' library(sp)
+#' DMS_to_DDM(DMS_input = "63° 30' 0\" N", axis = "vertical")
+#' DMS_to_DDM(DMS_input = "63° 30' 0 N", axis = "vertical")
+#' 
+#' @export
 DMS_to_DDM <-  function(DMS_input, axis){
   
   # Stop conditions

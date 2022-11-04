@@ -1,10 +1,11 @@
 #' DD_to_UTM
 #'
-#' @param lat 
-#' @param lon
-#' @param ellipsoid
+#' @param x FINISH
+#' @param y FINISH
+#' @param ellipsoid FINISH
+#' @param return FINISH
 #'
-#' @return UTM
+#' @return UTM FINISH
 #' 
 #' @importFrom sp coordinates<- proj4string<- CRS spTransform
 #' @importFrom magrittr %>%
@@ -13,10 +14,13 @@
 #' @importFrom tidyselect all_of
 #' @importFrom rlang .data
 #' 
+#' @examples
+#' library(sp)
+#' DD_to_UTM(x = 173.5, y = 63.5)
+#'
 #' @export
 #'
-#' @examples
-DD_to_UTM <-  function(x, y, ellipsoid = "WGS84", return = "all") {
+DD_to_UTM <- function(x, y, ellipsoid = "WGS84", return = "all") {
   
   # To Fix
   # y argument should be "DD_lat", x argument should be "DD_lon"

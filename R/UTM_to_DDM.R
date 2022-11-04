@@ -1,15 +1,18 @@
 #' UTM_to_DDM
 #'
-#' @param x 
-#' @param y
-#' @param zone
-#' @param ellipsoid
-#' @param return
+#' @param x  FINISH
+#' @param y FINISH
+#' @param zone FINISH
+#' @param ellipsoid FINISH
+#' @param return FINISH
 #'
-#' @return DDM
-#' @export
+#' @return DDM FINISH
 #'
 #' @examples
+#' library(sp)
+#' UTM_to_DDM(x = 624436.9, y = 7043729.8, zone = 59)
+#' 
+#' @export
 UTM_to_DDM <-  function(x, y, zone, ellipsoid = "WGS84", return = "all") {
   
   # Stop Conditions
