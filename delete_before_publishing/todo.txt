@@ -1,0 +1,142 @@
+DD_to_DDM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DD_to_DMS
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DD_to_UTM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DDM_to_DD
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DDM_to_DMS
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DDM_to_UTM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DMS_to_DD
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DMS_to_DDM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+DMS_to_UTM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+UTM_to_DD
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+UTM_to_DDM
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+UTM_to_DMS
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
+
+sp_convert
+_ documentation
+__ params
+__ importFrom
+__ examples
+__ return
+_ stop conditions
+_ clean function
+_ test code
+Other: _____
